@@ -30,9 +30,21 @@ Pickup Teams, abbreviated as PUT (like the CRUD operation), is a website designe
 + students looking to build out their own projects
 + students looking to work within a team setting
 + students looking to meet other like-minded students
++ students looking for interesting new projects and ideas
 
 **User Stories**  
-To be decided during team meeting.
+As a user, I want to be able to
++ post about my project on the site
++ connect with people who're interested in my project
++ connect with people whose projects/ideas I find interesting
++ form a team
++ leave comments under a post
++ find a poster's contact info
++ have a profile where I can list my contact info and skills, and find others' profiles
++ control how much of my personal information I put up
++ bookmark projects I find interesting and follow others whose ideas I find interesting
++ search by keyword and filter for projects and ideas
++ see the details of a post
 
 ### Technical Specifications
 
