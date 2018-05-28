@@ -17,7 +17,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 var index = require('./routes/index');
+var profile = require('./routes/profile');
 
 app.use('/', index);
+app.use('/profile', profile);
 
 module.exports = app;
