@@ -17,7 +17,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 var index = require('./routes/index');
+var add = require('./routes/add');
 
 app.use('/', index);
+app.use('/posts/add', add);
 
 module.exports = app;
