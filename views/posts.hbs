@@ -7,7 +7,7 @@
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Pickup-teams</a>
+    <a class="navbar-brand" href="/">Pickup-teams</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -17,7 +17,7 @@
             <a class="nav-item nav-link" href="/posts">Posts</a>
             <a class="nav-item nav-link" href="/">Profile</a>
             <a class="nav-item nav-link disabled" href="/posts/add">Add</a>
-            <a class="nav-item nav-link disabled" href="#">About</a>
+            <a class="nav-item nav-link disabled" href="http://tc.ucsd.edu/">About</a>
         </div>
     </div>
 </nav>
@@ -29,6 +29,8 @@
 
         {{#each chirps}}
         <div class="card">
+            <img src="/images/img_avatar1.png" class="media-object" style="width:60px">
+            <h5 class="card-title">Name: User 1</h5>
             <div class="card-body">
                 <h5 class="card-title">Title: {{author_title}}</h5>
                 <p class="card-text"><small class="text-muted">Description: {{author_text}}</small></p>
