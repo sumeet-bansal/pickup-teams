@@ -4,34 +4,37 @@
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 
-<body class="container" style="background: #fcfcfc">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Pickup-teams</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/posts">Posts</a>
+            <a class="nav-item nav-link" href="/">Profile</a>
+            <a class="nav-item nav-link disabled" href="/posts/add">Add</a>
+            <a class="nav-item nav-link disabled" href="#">About</a>
+        </div>
+    </div>
+</nav>
+
 
 <div class="container" >
     <!-- Content here -->
     <div class="row">
 
-        <div class="col-9">
-            <div class="card" style="width: 37rem;">
-                {{#each chirps}}
-                    <div class="card-body">
-                        <i id="retweet" class="fas fa-retweet"> gary retweeted</i>
-                        <br></br>
-                        {{author_name}} (@{{author_handle}})
-                        <br></br>
-                        {{text}}
-
-                        <div class="row">
-                            <div class="col-md-4"><i class="far fa-comment"></i>{{author_text}}</div>
-                        </div>
-                    </div>
-                    <hr></hr>
-                {{/each}}
+        {{#each chirps}}
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Title: {{author_title}}</h5>
+                <p class="card-text"><small class="text-muted">Description: {{author_text}}</small></p>
             </div>
-
         </div>
+        {{/each}}
 
     </div>
 </div>
