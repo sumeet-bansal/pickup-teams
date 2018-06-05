@@ -18,8 +18,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var index = require('./routes/index');
 var add = require('./routes/add');
+var posts = require('./routes/posts');
 
 app.use('/', index);
 app.use('/posts/add', add);
+app.use('/posts', posts);
 
 module.exports = app;

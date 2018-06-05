@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+
+<body class="container" style="background: #fcfcfc">
+
+<div class="container" >
+    <!-- Content here -->
+    <div class="row">
+
+        <div class="col-9">
+            <div class="card" style="width: 37rem;">
+                {{#each chirps}}
+                    <div class="card-body">
+                        <i id="retweet" class="fas fa-retweet"> gary retweeted</i>
+                        <br></br>
+                        {{author_name}} (@{{author_handle}})
+                        <br></br>
+                        {{text}}
+
+                        <div class="row">
+                            <div class="col-md-4"><i class="far fa-comment"></i>{{author_text}}</div>
+                        </div>
+                    </div>
+                    <hr></hr>
+                {{/each}}
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
