@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <title>about</title>
+    <link rel='stylesheet' href='/public/css/style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <meta name="google-signin-client_id" content="835972446985-f230fv2dlivbu78m92ufa4bsvic4e0qi.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
-
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,35 +26,35 @@
     </div>
 </nav>
 
-
-
-<div class="site-wrapper">
-
-    <div class="site-wrapper-inner">
-
-        <div class="container">
-
-
-            <div class="inner cover">
-                <h1 class="cover-heading">Pick Up Your Teams</h1>
-                <p class="lead">
-
-                    Pickup Teams,is a website designed to
-                    connect students looking to work on similar personal projects.The fundamental idea is that
-                    students can post their own personal projects or ideas that they'd like to build out
-                    with a team, view other students' projects and ideas, and
-                    connect with those other students, whose projects and ideas they find interesting.</p>
-                <p class="lead">
-                    <a href="/posts" class="btn btn-lg btn-default">Learn more</a>
-                </p>
-            </div>
-
-        </div>
-
-    </div>
+<div class="container">
+    <h1 class="display-3">Post your Project!</h1>
+    <p class="lead"></p>
+    <hr class="my-4">
+    <p>Please fill out the following.</p>
 
 </div>
 
+<div class="container">
 
+
+        <form formaction = "/posts" method="POST">
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustom01">Title</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="tweet" name="author_title" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comment">Description:</label>
+                <textarea class="form-control" rows="5" id="comment"  name="author_text"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+
+
+</div>
 </body>
 </html>

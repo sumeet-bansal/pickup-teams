@@ -23,6 +23,7 @@
                                                         <li><p><span class="glyphicon glyphicon-envelope one" style="width:50px;"></span>{{email}}</p></li>
                                                         <li><p><span class="glyphicon glyphicon-map-marker one" style="width:50px;"></span>{{location}}</p></li>
                                                         <li><p><i class="fab fa-github" style="width:50px"></i><a href={{github}}>{{github}}</p></a></li>
+                                                        <li><p><i class="fas fa-home" style="width:50px"></i><a class="nav-item nav-link" href="/">Back to Home</p></a></li>
                                                 </ul>
                                         </div>
                                 </div>
@@ -33,35 +34,13 @@
                                         {{#each skills}}
                                         <div class="pull-left">
                                                 <div class="pull-left" style="width:35px; line-height:1;">
-                                                        <div style="height:9px; margin:5px 0;">{{lang_name}} </div>
+                                                        <div style="height:7px; margin:5px 0;">{{lang_name}} </div>
                                                 </div>
                                                 <div class="pull-right" style="width:180px;">
                                                         <div class="progress" style="height:9px; margin:8px 0;">
-                                                                {{#if type level = 5}}
                                                                 <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="5" style="width: 100%"> 
                                                                         <span class="sr-only">80% Complete (danger)</span>
                                                                 </div>
-                                                                {{/if}}
-                                                                {{#if type level = 4}}
-                                                                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="4" aria-valuemin="0" aria-valuemax="5" style="width: 80%">
-                                                                        <span class="sr-only">80% Complete (danger)</span>
-                                                                </div>
-                                                                {{/if}}
-                                                                {{#if type level = 3}}
-                                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="5" style="width: 60%">
-                                                                        <span class="sr-only">80% Complete (danger)</span>
-                                                                </div>
-                                                                {{/if}}
-                                                                {{#if type level = 2}}
-                                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="5" style="width: 40%">
-                                                                        <span class="sr-only">80% Complete (danger)</span>
-                                                                </div>
-                                                                {{/if}}
-                                                                {{#if type level = 1}}
-                                                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="5" style="width: 20%">
-                                                                        <span class="sr-only">80% Complete (danger)</span>
-                                                                </div>
-                                                                {{/if}}
                                                         </div>
                                                 </div>
                                         </div>

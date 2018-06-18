@@ -18,8 +18,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var index = require('./routes/index');
 var profile = require('./routes/profile');
+var posts = require('./routes/posts');
+var add = require('./routes/add');
 
 app.use('/', index);
+app.use('/posts/add', add);
+app.use('/posts', posts);
 app.use('/profile', profile);
 
 module.exports = app;
